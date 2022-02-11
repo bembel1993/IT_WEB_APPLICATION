@@ -1,0 +1,17 @@
+p.t1{
+font-family: Monotype Corsiva;
+font-size: 30px;
+}
+
+div p{
+	text-align: center;
+font-size: 50px;
+color: red;
+font-weight:bold;
+}
+
+.block1 {
+border: solid 10px navy;
+width: 400;
+height: 200
+}

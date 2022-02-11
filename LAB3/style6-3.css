@@ -1,0 +1,10 @@
+body{
+	background-color: yellow;
+}
+
+.block1{
+	width: 200px;
+    height: 100px;
+	margin: 5% 550px;
+	border: solid 2px black;
+}

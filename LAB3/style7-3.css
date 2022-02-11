@@ -1,0 +1,169 @@
+body{
+	background-color: #ffffee;
+}
+.block1{
+	background-color: yellow;
+	border: solid 0px;
+	width: 100%;
+    height: 5%;
+	box-sizing: ;
+}
+p.t1{
+	font-family: Times New Roman;
+	color: #000099;
+	font-size: 20pt;
+	font-weight:bold;
+	text-align: center;
+	vertical-align: bottom;
+}
+p.t2{
+	font-family: Arial;
+	color: #990099;
+	font-size: 22pt;
+	font-weight:bold;
+	text-align: left;
+}
+p.t3{
+	font-family: Times New Roman;
+	color: #009900;
+	font-size: 20pt;
+	font-weight:bold;
+	text-align: center;
+}
+p.t4{
+	font-family: Courier;
+	color: #ff6600;
+	font-size: 18pt;
+	font-weight:bold;
+	text-align: right;
+}
+p.t5{
+	font-family: tahoma;
+	color: #0066ff;
+	font-size: 16pt;
+	font-weight:bold;
+	text-align: justify;
+}
+p.t6{
+	font-family: Times New Roman;
+	color: #6600ff;
+	font-size: 20pt;
+	text-align: center;
+}
+p.t7{
+	font-family: arial;
+	color: green;
+	font-size: 14pt;
+	text-align: center;
+	text-decoration: line-through;
+}
+p.t8{
+	background: #ffffee;
+	font-family: arial;
+	color: #000000;
+	font-size: 10pt;
+	text-align: justify;
+	margin-top: 2px; /* Отступ сверху */
+    margin-bottom: 0px;
+}
+p.over{
+	background: #ffffee;
+	font-family: arial;
+	color: #000000;
+	font-size: 10pt;
+	text-align: justify;
+	margin-top: 2px; /* Отступ сверху */
+    margin-bottom: 0px;
+	text-decoration: overline;
+}
+p.t9{
+	font-family: arial;
+	font-weight:bold;
+	text-align: center;
+}
+p.t10{
+	font-family: arial;
+	color: blue;
+}
+td {
+    padding: 5px; /* Поля вокруг текста */ 
+    border: 1px solid; /* Граница вокруг ячеек */ 
+   }
+p.t11{
+	font-family: Times New Roman;
+	color: LimeGreen;
+	font-size: 15pt;
+    text-align: center;
+}
+.block2{
+	position: relative;
+	width: 503px;
+	height: 200px;
+    background: white;
+	float: bottom;
+	border: solid 0px;
+	margin: 5px 415px;
+}
+.block3{
+	width: 167px;
+    background: orange;
+	float: left;
+}
+.block4{
+	width: 167px;
+	height: 45px;
+    background: white;
+	float: left;
+	margin: -5px 0px;
+}
+.block5{
+	width: 167px;
+	height: 45px;
+    background: yellow;
+	float: left;
+	margin: -10px 0px;
+	padding: 1px 0px;
+}
+p.t12{
+	font-size: 10pt;
+	font-family: arial;
+	text-align: center;
+}
+.block6{
+	border: solid 0px;
+	position: relative;
+	width: 350px;
+	text-align: left;
+	box-sizing: ;
+}
+.block7{
+	border: solid 0px;
+	position: relative;
+	width: 350px;
+	text-align: right;
+	box-sizing: ;
+}
+p.t13{
+	font-family: arial;
+	color: green;
+	font-weight:bold;
+}
+.block8{
+	border: solid 0px;
+	position: relative;
+	width: 350px;
+	margin: 1px 54px;
+	box-sizing: ;
+}
+.block9{
+	border: solid 0px;
+	margin: 1px 54px;
+	box-sizing: ;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+	color: red;
+}

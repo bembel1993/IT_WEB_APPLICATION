@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.bl1{
+	width: 300px;
+	height: 210px;
+	border: solid 1px;
+	text-align: center;
+	float: left;
+	margin: 5px;
+}
+.bl2{
+	width: 300px;
+	height: 210px;
+	border: solid 1px;
+	text-align: center;
+	float: left;
+	margin: 5px;
+}
+.bl3{
+	width: 300px;
+	height: 210px;
+	border: solid 1px;
+	text-align: center;
+	float: left;
+	margin: 5px;
+}
+
+
+</style>
+</head>
+
+<body>
+<form>
+<div class='bl1' id='S'>
+Бокс 1
+<img src='img_fjords.jpg' width="290" height="160">
+<input type='button' value='Снять' onclick='win1()'/>
+</div>
+<div class='bl2' id='N'>
+Бокс 2
+<img src='img_lights.jpg' width="290" height="160">
+<input type='button' value='Скрыть' onclick='win2()'/>
+</div>
+<div class='bl3' id='P'>
+Бокс 3
+<img src='img_forest.jpg' width="290" height="160">
+<input type='button' value='Открыть' onclick='win3()'/>
+</div>
+</form>
+<script>
+function win1() {
+   document.getElementById("S").style.display = "none";
+}
+function win2() {
+   document.getElementById("N").style.visibility = "hidden";
+   }
+function win3() {
+   document.getElementById("S").style.display = "block";
+   document.getElementById("N").style.visibility = "visible";
+}
+</script>
+
+
+</body>
+</html>

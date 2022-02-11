@@ -1,0 +1,59 @@
+body{
+	background-image: url(null.jpg);
+}
+
+a{
+	text-decoration: none;
+	color: navy;
+}
+
+.block3{
+	position: absolute;
+	width: 1346px;
+    height: 95%;
+	float: bottom;
+}
+
+.block1{
+	position: relative;
+	margin: 2px 2px 1px;
+	width: 400px;
+    height: 20%;
+	opacity: 0.8;
+ 	background: PaleTurquoise;
+	float: left;
+}
+
+.block2{
+	position: relative;
+	margin: 2px 2px 1px;
+	width: 534px;
+    height: 20%;
+	opacity: 0.8;
+ 	background: PaleTurquoise;
+	float: left;
+}
+
+h1{
+text-align: center;
+color: navy;
+font-family: verdana;
+}
+
+p{
+	margin:20px 20 5;
+text-align: justify ;
+color: black;
+font-family: georgia;
+}
+
+.block4{
+	position: relative;
+	margin: 5px -3px;
+	width: 1346px;
+    height: 81%;
+	border: solid 3px blue;
+	float: left;
+	opacity: 0.9;
+ 	background: white;
+}

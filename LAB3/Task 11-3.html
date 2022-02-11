@@ -1,0 +1,44 @@
+<html>
+    <head>
+	<meta charset="UTF-8">
+        <title>Задание 11 часть 3</title>
+		<link rel="stylesheet" type="text/css" href="style11-3.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<div class='bl1'>
+<div class="dropdown">
+  <p class='bl2' onclick="myFunction()" id = "push">
+  Нажмите, чтобы показать панель</p>
+  <div class="dropdown-content" id='div'>
+   <p> Эта  панель  содержит  элемент  div, который  скрыт  по  умолчанию 
+(display:  none).
+<br><br>  
+Используем  стиль  CSS  с  JavaScript,  чтобы показать  div  (display:  block).  
+<br><br>
+Как  это  работает:  обратите  внимание,  что  элемент  p  с class="flip" 
+имеет атрибут onclick, прикрепленный к нему. Когда пользователь нажимает на 
+элемент  p,  выполняется  функция  myFunction(),  которая  изменяет  стиль  
+div  с  id="panel"  с display:none (hidden) на display:block (visible).<p>
+  </div>
+</div>
+</div>
+<script>
+let isVisible=true;
+const div = document.getElementById('div');
+
+function myFunction() {
+	isVisible = !isVisible;
+	div.style.display = isVisible ? "block":"none";
+	};
+/*   document.getElementById("N").style.display = "block";
+}*/
+	document.getElementById('push')
+	.addEventLister( myFunction);
+
+</script>
+</body>
+</html>

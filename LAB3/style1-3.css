@@ -1,0 +1,22 @@
+.block1 {
+margin: 100px 400px; 
+border: solid 10px aqua;
+background: aqua;
+width: 465;
+}
+
+h1.t1 {
+text-align: center;
+color: red;
+font-weight:bold;
+
+}
+
+p {
+text-align: justify;
+}
+
+h3{
+text-align: center;
+color: blue;
+}
