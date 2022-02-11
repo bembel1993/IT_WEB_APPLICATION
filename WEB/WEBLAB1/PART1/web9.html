@@ -1,0 +1,34 @@
+<html>
+    <head>
+<meta charset="UTF-8">
+        <title>for</title>
+    </head>
+    <body>
+
+        <script>
+   /*     document.writeln('<b>'+"Степень | Результат"+ '</b>' + '<br>');
+            for (var i=0; i<6; i++){
+				let a = Math.pow(2, i);
+		document.write('2' + '<sup>'+ i +'</sup>' + '|');
+		document.writeln( a);
+		document.writeln("<hr align='left' width='100'>");
+				}
+	*/		
+document.write ('<table width="15%" border="1" align = "center">');
+    document.writeln('<tr align = "center">');
+	document.write("<td>" + "<b>" + 'Степень' + "<\/td>"+"<td>"+"<b>" + 'Результат'+"<\/td>");
+	document.writeln("<\/tr>");
+	for (i=0; i<6; i++) {
+	let b = Math.pow(2, i);
+    document.writeln('<tr align = "center">');
+    for (j=1; j<2; j++) 
+	//document.write("<td>" + i + j + "<\/td>");
+	document.write("<td>" + '2' + '<sup>'+ i +'</sup>' + "<\/td>");
+    document.write("<td align = 'right'>" + b + "<\/td>");
+	document.writeln("<\/tr>");
+    }
+	document.writeln( b);
+    document.write ("<\/table> ");
+        </script>
+    </body>
+</html>

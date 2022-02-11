@@ -1,0 +1,31 @@
+#red{
+	margin: 0px;
+	/*position: relative;*/
+	color: red;
+	width: 156px;
+height:156px;
+float: left;
+border: solid 15px white;
+background-color: red;
+}	
+#yellow{
+	margin: 0px;
+	/*position: relative;*/
+	color: yellow;
+	width: 156px;
+height:156px;
+float: left;
+border: solid 15px white;
+background-color: yellow;
+
+}
+#green{
+	margin: 0px;
+	/*position: relative;*/
+	color: green;
+	width: 156px;
+height:156px;
+float: left;
+border: solid 15px white;
+background-color: green;
+}

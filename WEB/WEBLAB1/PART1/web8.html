@@ -1,0 +1,26 @@
+<html>
+    <head>
+<meta charset="UTF-8">
+        <title>for</title>
+    </head>
+    <body>
+        <h1>Пример простой</h1>
+        <script>
+            function line() {
+                document.writeln("<hr align='center' width='100'>");
+            }
+            for (var i=1; i<10; i++){
+				line();
+				}
+				
+			window.onload=function(){
+			var a=0;
+			function line2() {
+				document.body.innerHTML+="<hr align='center' width='"+(a+=10)+"'>";
+			}
+			for (var i=1; i<10; i++)
+			line2();
+}
+        </script>
+    </body>
+</html>
