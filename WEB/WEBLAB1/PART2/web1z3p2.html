@@ -1,0 +1,49 @@
+<html>                                                                  
+<head>   
+<style type="text/css">
+#wrap1
+{
+font-family:verdana;
+color:#06799f;
+font-size:25px;
+font-weight:bold;
+}
+
+
+</style>                                                      
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript">   
+$(document).ready(function(){
+
+   $("p,#el2,#el3").click(function(){
+		$(this).css("font-size", "20px");
+	});
+	$("p#el2").click(function(){
+		$(this).css("color", "green");
+	});
+	$("p.el3").click(function(){
+		$(this).css("color", "red");
+	});
+	$(":button").click(function(){
+		$(this).css("color", "blue");
+	});
+	$("a").mouseover(function(){
+		$(this).css("font-size", "20px");
+	});
+	$("#a1Color").mouseover(function(){
+		$(this).css("color", "green");
+	});
+});                                           
+</script>                                                          
+</head>
+<body> 
+<p>Я первый элемент (без id)</p>
+<p id="el2">Я второй элемент (id el2)</p>
+<p class="el3">Я третий элемент (class el3)</p>
+<input id="but1" class="pushtext" type="button" value="Я кнопка" />
+<br><br>
+<a id="a1Color" href="http://www.google.ru">Google</a>
+<br><br>
+<a id="a2Color" href="http://htmlbook.ru/samhtml">HTML учебник</a>
+</body>
+</html>
