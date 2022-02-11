@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script type='text/javascript'>
+function start(){  
+   xhttp=new XMLHttpRequest();
+   xhttp.open('GET','bookshop.json',true);
+   xhttp.send();
+   xhttp.onreadystatechange=function(){
+      if (xhttp.readyState==4){
+         //Принятое содержимое json файла должно быть вначале обработано функцией eval 
+         var json=eval( '('+xhttp.responseText+')' );
+         //Далее мы можем спокойно использовать данные
+         document.getElementById('wrap').style.display='block';
+		 document.getElementById('res1').innerHTML=json.bookbase[4].author;
+         document.getElementById('res2').innerHTML=json.bookbase[6].title;
+		 document.getElementById('res3').innerHTML=json.bookbase[7].title;
+		 document.getElementById('res4').innerHTML=json.bookbase[8].title;
+         document.getElementById('res5').innerHTML=json.bookbase[4].quantity;
+		 document.getElementById('res6').innerHTML=json.bookbase[7].quantity;
+		 document.getElementById('res7').innerHTML=json.bookbase[10].quantity;
+		 document.getElementById('res8').innerHTML=json.bookbase[13].quantity;
+      }
+   }
+}
+</script>
+</head>
+<body>
+<input type='button' value='Запросить содержимое' onclick='start()'/>
+<br /><br />
+<div id='wrap' style='display:none;'>
+<hr />
+<p>Value 4 author: <b><span id='res1'></span></b></p>
+<p>Value 6 title: <b><span id='res2'></span></b></p>
+<p>Value 7 title: <b><span id='res3'></span></b></p>
+<p>Value 8 title: <b><span id='res4'></span></b></p>
+<p>Value 4 quantity: <b><span id='res5'></span></b></p>
+<p>Value 7 quantity: <b><span id='res6'></span></b></p>
+<p>Value 10 quantity: <b><span id='res7'></span></b></p>
+<p>Value 13 quantity: <b><span id='res8'></span></b></p>
+<hr />
+</div>
+</body>
+</html>

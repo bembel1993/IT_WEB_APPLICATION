@@ -1,0 +1,64 @@
+﻿<html>
+<head>
+<script type='text/javascript'>
+/* Пишите код здесь */
+function summer(){
+	xhttp=new XMLHttpRequest();
+	xhttp.onreadystatechange=function(){
+      if (xhttp.readyState==4 && xhttp.status==200)
+         document.getElementById('par1').innerHTML=xhttp.responseText;
+      }
+   xhttp.open('GET', 'summer.txt', true);
+   xhttp.send();
+  }
+function autumn(){
+	xhttp=new XMLHttpRequest();
+	xhttp.onreadystatechange=function(){
+      if (xhttp.readyState==4 && xhttp.status==200)
+         document.getElementById('par2').innerHTML=xhttp.responseText;
+      }
+   xhttp.open('GET', 'autumn.txt', true);
+   xhttp.send();
+  }
+function winter(){
+	xhttp=new XMLHttpRequest();
+	xhttp.onreadystatechange=function(){
+      if (xhttp.readyState==4 && xhttp.status==200)
+         document.getElementById('par3').innerHTML=xhttp.responseText;
+      }
+   xhttp.open('GET', 'winter.txt', true);
+   xhttp.send();
+  } 
+function spring(){
+	xhttp=new XMLHttpRequest();
+	xhttp.onreadystatechange=function(){
+      if (xhttp.readyState==4 && xhttp.status==200)
+         document.getElementById('par4').innerHTML=xhttp.responseText;
+      }
+   xhttp.open('GET', 'spring.txt', true);
+   xhttp.send();
+  }   
+</script>
+</head>
+<body>
+<p id="par1"></p>
+<div id='summer'> 
+<input id="but1" type="button" value="Обратится к файлу summer.txt" onclick='summer()'/>
+</div>
+<br /><br />
+<p id="par2"></p>
+<div id='autumn'>
+<input id="but2" type="button" value="Обратится к файлу autumn.txt" onclick='autumn()'/>
+</div>
+<br /><br />
+<p id="par3"></p>
+<div id='winter'>
+<input id="but3" type="button" value="Обратится к файлу winter.txt" onclick='winter()'/>
+</div>
+<br /><br />
+<p id="par4"></p>
+<div id='spring'>
+<input id="but4" type="button" value="Обратится к файлу spring.txt" onclick='spring()'/>
+ </div>
+</body>
+</html>

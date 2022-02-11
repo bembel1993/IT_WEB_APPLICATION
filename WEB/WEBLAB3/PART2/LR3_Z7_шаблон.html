@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+<script type='text/javascript'>
+
+function start(){
+   var x=document.getElementById('var1').value;
+   var y=document.getElementById('var2').value;
+   var z=document.getElementById('var3').value;
+
+   xhttp=new XMLHttpRequest();
+   xhttp.onreadystatechange=function(){
+      if (xhttp.readyState==4 && xhttp.status==200)
+         document.getElementById('ajax').innerHTML=xhttp.responseText;
+   }
+   xhttp.open('GET','testfile.php?x='+x+'&y='+y+'&z='+z,true);
+   //var str='x='+x+'&y='+y+'&z'+z;
+   xhttp.send();
+}
+</script>
+</head>
+<body>
+<input type='text' id='var1' />
+<input type='text' id='var2' />
+<input type='text' id='var3' />
+<input type='button' value='script1' onclick='start()'/>
+<br><br>
+<p id='ajax'></p>
+</body>
+</html>

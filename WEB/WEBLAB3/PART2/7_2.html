@@ -1,0 +1,54 @@
+<html>
+<head>
+<style type='text/css'>
+#booktab
+{
+border-collapse:collapse;
+border-style:solid;
+border-width:1px;
+}
+#booktab td,th
+{
+border-style:solid;
+border-width:1px;
+}
+#booktab th
+{
+background-color:#34cfbe;
+}
+</style>
+<script type='text/javascript'>
+function extract(){
+   var xhttp=new XMLHttpRequest();
+   xhttp.onreadystatechange=function(){
+      if (xhttp.readyState==4 && xhttp.status==200){
+         var base="<table id='booktab'><tr><th>Название</th><th>Автор</th><th>Стоимость (руб.)</th>";
+         base=base+'<th>Количество<br />на складе</th></tr>';
+         var book=xhttp.responseXML.getElementsByTagName('book');
+         var title=xhttp.responseXML.getElementsByTagName('title');
+         var author=xhttp.responseXML.getElementsByTagName('author');
+         var cost=xhttp.responseXML.getElementsByTagName('cost');
+         var quantity=xhttp.responseXML.getElementsByTagName('quantity');
+         for (var i=0;i<book.length;i++){
+            base=base+'<tr>';
+            base=base+'<td>'+title[i].childNodes[0].nodeValue+'</td>';
+            base=base+'<td>'+author[i].childNodes[0].nodeValue+'</td>';
+            base=base+'<td>'+cost[i].childNodes[0].nodeValue+'</td>';
+            base=base+'<td>'+quantity[i].childNodes[0].nodeValue+'</td>';
+            base=base+'</tr>';
+         }
+      base=base+'</tr></table>';
+      document.getElementById('res').innerHTML=base;
+      }
+   }
+   xhttp.open('GET','bookshop.xml',true);
+   xhttp.send();
+}
+</script>
+</head>
+<body>
+<input type='button' value='Извлечь данные' onclick='extract()'/>
+<br /> <br />
+<div id='res'></div>
+</body>
+</html>
