@@ -1,0 +1,180 @@
+﻿<!--
+
+Шановний учаснику конкурсу «Вчитель-новатор»!
+Заповніть, будь ласка, реєстраційну анкету українською мовою.
+Прохання надати повну відповідь на всі поставлені запитання.
+Якщо ви подаєте декілька конкурсних робіт, будь ласка,
+заповніть дану анкету для кожної конкурсної роботи окремо.
+Дякуємо Вам за участь у конкурсі та бажаємо успіхів!
+
+1.	Прізвище
+2.	Ім’я та по-батькові
+3.	Назва конкурсної роботи
+4.	Номінація конкурсної роботи (список для вибору)
+•	Навчальний проект
+•	Виховний проект
+•	Позашкільний проект
+•	Навчальний контент
+•	Он-лайновий освітній ресурс
+•	Навчально-методичне забезпечення
+5.	Навчальна дисципліна (наприклад, біологія)
+6.	Чи була апробована ваша робота?
+Так/ні
+7.	Якщо так, то на якому рівні?
+8.	Повна назва установи, де ви працюєте
+9.	Ваша посада
+10.	Місто/населений пункт
+11.	Область (на вибір 24 області + АР Крим + м. Київ + м.Севастополь)
+12.	 Мобільний телефон
+13.	Електронна пошта
+14.	Ви брали участь у попередніх конкурсах  «Вчитель-новатор»?
+15.	Якщо так,  то вкажіть, коли саме.
+16.	 Яким чином ви дізналися про конкурс «Вчитель-новатор»? (на вибір, можна декілька варіантів)
+-	Сайт МОН молодьспорту
+-	Сайт Майкрософт Україна
+-	Сайт Мережі «Партнерство в навчанні»
+-	Обласний ІППО
+-	Обласне управління освіти
+-	Міське управління освіти
+-	Osvita.com
+-	Gurt.org.ua
+-	_________________________ інше
+
+Я даю згоду на обробку моїх персональних даних і погоджуюся з Політикою конфіденційності (галочка обязательна)
+
+Кнопки Подати анкету, Заповнити знову
+
+-->
+<html>
+    <head>
+	<meta charset="UTF-8">
+        <title>Домашняя работа</title>
+<style type="text/css">
+.block2 {
+		
+width: 53%;
+background: Plum;
+ 
+border: solid 1px black;
+}
+.block1 {
+position: relative;
+left: 17px;
+top: 100px;
+background: Plum;
+width: 400px;
+padding-left: 100px;
+}
+</style>
+<script>
+function Selected1(a) 
+			{
+               var label = a.value;
+               if (label=="No") {
+                  document.getElementById("Block1").setAttribute('disabled', 'disabled');
+               } 
+			   else
+			   document.getElementById("Block1").removeAttribute('disabled');
+            } 
+               function Selected2(a) 
+			{
+               var label = a.value;
+               if (label=="No") {
+                  document.getElementById("Block2").setAttribute('disabled', 'disabled');
+               } 
+			   else
+			   document.getElementById("Block2").removeAttribute('disabled');
+            } 
+</script>
+    </head>
+    <body bgcolor="Plum">
+	<table align="center" width="100%" border=0>
+	
+	<tr>
+	<td width="310px"></td>
+	<td>
+	<form>
+	<div class="block1">Шановний учаснику конкурсу «Вчитель-новатор»!
+Заповніть, будь ласка, реєстраційну анкету українською мовою.
+Прохання надати повну відповідь на всі поставлені запитання.
+Якщо ви подаєте декілька конкурсних робіт, будь ласка,
+заповніть дану анкету для кожної конкурсної роботи окремо.
+Дякуємо Вам за участь у конкурсі та бажаємо успіхів!</div>
+    <div class="block2"><br><br><br><br><br><br><br>
+	1.	Прізвище <input type="text" /><br><br>
+	2.	Ім’я та по-батькові <input type="text" /><br><br>
+    3.	Назва конкурсної роботи <input type="text" /><br><br>
+    4.	Номінація конкурсної роботи (список для вибору) <br>
+	<input type="radio" name="s" value="1">Навчальний проект</input><br>
+	<input type="radio" name="s" value="1">Виховний проект</input><br>
+	<input type="radio" name="s" value="1">Позашкільний проект</input><br>
+	<input type="radio" name="s" value="1">Навчальний контент</input><br>
+	<input type="radio" name="s" value="1">Он-лайновий освітній ресурс</input><br>
+	<input type="radio" name="s" value="1">Навчально-методичне забезпечення</input><br><br>
+	5.	Навчальна дисципліна <input type="text" placeholder="наприклад, біологія"/><br><br>
+	
+	6.	Чи була апробована ваша робота?<br>
+<label>так <input type="radio" name="s" value="Yes" 
+aria-required="true" onChange="Selected1(this)"/></label>
+ 
+<label>ні <input type="radio" name="s" value="No" 
+aria-required="true" onChange="Selected1(this)"/><br><br>
+    
+	7.	Якщо так, то на якому рівні? <input  id='Block1' type="text" name="7"/><br><br>
+    
+	8.	Повна назва установи, де ви працюєте <input type="text" /><br><br>
+    9.	Ваша посада <input type="text" /><br><br>
+    10.	Місто/населений пункт <input type="text" /><br><br>
+	11.	Область <select name="note">
+<option value="o">Винницкая область</option>
+<option value="o">Волынская область</option>
+<option value="o">Днепропетровская область</option>
+<option value="o">Донецкая область</option>
+<option value="o">Житомирская область</option>
+<option value="o">Закарпатская область</option>
+<option value="o">Запорожская область</option>
+<option value="o">Ивано-Франковская область</option>
+<option value="o">Киевская область</option>
+<option value="o">Кировоградская область</option>
+<option value="o">Луганская область</option>
+<option value="o">Львовская область</option>
+<option value="o">Николаевская область</option>
+<option value="o">Одесская область</option>
+<option value="o">Полтавская область</option>
+<option value="o">Ровненская область</option>
+<option value="o">Сумская область</option>
+<option value="o">Тернопольская область</option>
+<option value="o">Харьковская область</option>
+<option value="o">Херсонская область</option>
+<option value="o">Хмельницкая область</option>
+<option value="o">Черкасская область</option>
+<option value="o">Черниговская область</option>
+<option value="o">Черновицкая область</option>
+	</select> <br><br>
+    12.	Мобільний телефон <input type="text" /><br><br>
+    13.	Електронна пошта <input type="text" /><br><br>
+	14.	Ви брали участь у попередніх конкурсах  «Вчитель-новатор»?<br>
+так <input type="radio" name="s" value="1"></input> 
+ні <input type="radio" name="s" value="1"></input><br><br>
+    15.	Якщо так,  то вкажіть, коли саме <input type="text" /><br><br>
+    16.	Яким чином ви дізналися про конкурс «Вчитель-новатор»?<br>
+<input type="checkbox">Сайт МОН молодьспорту</input> <br>
+<input type="checkbox">Сайт Майкрософт Україна</input> <br>
+<input type="checkbox">Сайт Мережі «Партнерство в навчанні»</input> <br>
+<input type="checkbox">Обласний ІППО</input> <br>
+<input type="checkbox">Обласне управління освіти</input> <br>
+<input type="checkbox">Міське управління освіти</input> <br>
+<input type="checkbox">Osvita.com</input> <br>
+<input type="checkbox">Gurt.org.ua</input> <br>
+інше<input type="text" /><br><br>
+Я даю згоду на обробку моїх персональних даних і погоджуюся з Політикою 
+конфіденційності <input type="checkbox"></input><br><br>
+<button type="submit">Подати анкету</button> 
+<button type="reset" name="res"> Заповнити знову</button>
+	</div>
+	</form>
+	</td>
+	</tr>
+	</table> 
+    </body>
+</html>

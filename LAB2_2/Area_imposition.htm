@@ -1,0 +1,35 @@
+﻿<!--
+При пересечении областей, активной будет та, которая была создана ранее. 
+-->
+
+<html>
+    <head>
+	<meta charset="UTF-8">
+        <title>Пересечение областей на карте-изображении</title>
+    </head>
+    <body style=" background-color:Silver; text-align:center;">
+        
+        <img src="images/Stanley_Park.jpg"  alt =""  title =""  width="1000px" usemap="#StanleyPark" />
+        
+<!--
+Ваш код здесь 
+-->    
+<map name="StanleyPark" id="StanleyPark">
+<area shape="poly" coords="10, 250, 10, 50, 110, 50, 150, 250" alt="Trees" title="Trees"/>
+<area shape="rect" coords=" 540, 150, 660, 350" alt="Monument" title="Monument"/>
+<area shape="rect" coords="420, 150, 990, 250" alt="City" title="City"/>
+<area shape="circle" coords="205, 225, 30" alt="Factories" title="Factories"/>
+<area shape="poly" coords="10, 270, 10, 480, 990, 480" alt="Grass" title="Grass"/>
+<area shape="poly" coords="15, 260, 970, 440, 980, 390" alt="Cycling Road" title="Cycling Road"/>
+<area shape="rect" coords="5, 5, 995, 495" alt="Stanley Park" title="Stanley Park"/>
+</map>
+        
+        <p>
+        Stanley Park is recognized around the globe as one of the great parks of the world! Vancouver's first park and one of the city's main
+         tourist attractions, Stanley Park is an evergreen oasis of 400 hectares (1,000 acres) close to the downtown core. Its natural west coast 
+         atmosphere offering a back drop of majestic cedar, hemlock and fir trees embraces visitors and transports them to an environment rich in 
+         tranquility. The park abounds in wildlife and its features appeal to the naturalist, the plant lover or one who would do nothing more than
+          relax in beautiful surroundings. There is always something happening in the park - check our Events Calendar for listings.
+        </p>
+    </body>
+</html>
